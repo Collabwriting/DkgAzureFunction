@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "node_modules/dkg.js/**/*.d.ts"  // Adjust the path accordingly
+  ]
+}
