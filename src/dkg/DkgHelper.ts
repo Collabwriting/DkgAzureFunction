@@ -5,11 +5,11 @@ export class DkgHelper {
     public static getClient() {
         return new DKG({
             endpoint: process.env.OT_NODE_HOSTNAME,
-            port: 80,
+            port: process.env.OT_NODE_PORT,
             blockchain: {
-            name: process.env.BLOCKCHAIN_NAME,
-            publicKey: process.env.WALLET_PUBLIC_KEY,
-            privateKey: process.env.WALLET_PRIVATE_KEY,
+                name: process.env.BLOCKCHAIN_NAME,
+                publicKey: process.env.WALLET_PUBLIC_KEY,
+                privateKey: process.env.WALLET_PRIVATE_KEY,
             },
         });
     }
